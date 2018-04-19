@@ -1,0 +1,18 @@
+{
+    "meter": {
+        "meter-id": "4",
+        "container-name": "drone",
+        "meter-name": "drone",
+        "flags": "meter-kbps",
+        "meter-band-headers": {
+            "meter-band-header": {
+                "band-id": "0",
+                "band-rate": "60000",
+                "meter-band-types": { "flags": "ofpmbt-drop" },
+                "band-burst-size": "0",
+                "drop-rate": "60000",
+                "drop-burst-size": "0"
+            }
+        }
+    }
+}

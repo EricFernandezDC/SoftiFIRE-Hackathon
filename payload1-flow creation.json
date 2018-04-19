@@ -1,0 +1,35 @@
+{
+    "flow": {
+        "strict": "false",
+        "instructions": {
+            "instruction": {
+                "order": "0",
+                "apply-actions": {
+                    "action": { "order": "0" }
+                }
+            }
+        },
+        "table_id": "2",
+        "id": "130",
+        "cookie_mask": "0",
+        "match": {
+            "ethernet-match": {
+                "ethernet-type": { "type": "2048" }
+            },
+            "ipv4-source": "10.10.10.10/24",
+            "ipv4-destination": "172.20.18.201/24",
+            "ip-match": {
+                "ip-protocol": "56",
+                "ip-dscp": "15",
+                "ip-ecn": "1"
+            },
+            "in-port": "0"
+        },
+        "hard-timeout": "6000",
+        "cookie": "7",
+        "idle-timeout": "6000",
+        "flow-name": "securitysystems",
+        "priority": "2",
+        "barrier": "false"
+    }
+}
