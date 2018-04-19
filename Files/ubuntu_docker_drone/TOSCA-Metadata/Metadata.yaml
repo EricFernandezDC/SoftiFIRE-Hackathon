@@ -1,0 +1,12 @@
+name: Ubuntu + Docker
+description: Ubuntu deployment with Docker, automatically starts drone VNF.
+provider: Vodafone
+shared: true
+nfvo_version: 1.0.0
+image:
+    upload: false
+    names:
+            - Ubuntu-16.04
+vim_types:
+    - openstack
+

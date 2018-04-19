@@ -1,0 +1,25 @@
+--- 
+description: "Template for SoftFIRE yaml resource request definition"
+imports: 
+  - 
+    softfire_node_types: "http://docs.softfire.eu/etc/softfire_node_types.yaml"
+topology_template: 
+  node_templates: 
+
+    mynsd:
+      properties: 
+        resource_id: ubuntu_docker_drone
+        testbeds:
+          ANY: surrey
+        nsd_name: ubuntu
+        file_name: Files/ubuntu_docker_drone.csar
+        ssh_pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsV8Z8xBspGtZEThVyAvkamHHbDlGTBC7KOFQthVAt8bMUYkY2iiGZiMznDpVZslP6Cn+5KNOmAkw9oP2n3ZhopTAAC7G+UlotKqDveBLmDUAtUhCaHVJO2e+zZ3/y3fXgKtzEzRh+P9BUEhBIjPj4fLwvq+60ctUdiRi4tHlU7WMpTOLTTc6eRVlnR6jYEm/F4wHbJMsh/OVT7AsgZczIDsiaJ5sfxvrH39mqV9gKeEHyuTO1bSY6ztMWkCdIvQbjVEMBUeNuhjjkY3PXZn5/8D/eSdfp8GzJ+auR8kQlsdXy77hDKvLs8/aB818odnEhPY/n3KUepOw6s3ktA1Vr"
+      type: NfvResource
+    
+    sdn_ericsson:
+      properties:
+        resource_id: sdn-controller-odl-ericsson
+      type: SdnResource
+
+
+tosca_definitions_version: tosca_simple_yaml_1_0
